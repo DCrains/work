@@ -206,6 +206,7 @@
     .header{
         justify-content: space-between;
         padding:0 24px ;
+        background-color: var(--colorBlack900);
     }
 }
 .avatarmenu{
@@ -237,11 +238,9 @@
     align-items: center;
     padding: 16px 16px 16px 24px;
     font-size: 14px;
-   
-    background: 0 0;
+    background-color:var(--colorBlack900) ;
     border: none;
     text-decoration: none;
-    margin: 14px 0px;
 }
 .logorasmer{
     width: 97px !important;
