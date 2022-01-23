@@ -115,7 +115,8 @@ display: block;
     width: 24px;
     height: 24px;
     background: no-repeat 0 0/auto 500%;
-    background-image: url(../../public/footer/socials.svg);
+    background-position-x: 0% !important;
+    background-image: url(../../public/footer/socials.svg); 
 }
 .soc2{
     display: inline-block;
