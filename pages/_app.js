@@ -1,5 +1,7 @@
 import '../styles/globals.css'
 import  Header  from '../components/Header/index.js'
+import Footer from '../components/Footer/index.js'
+
 
 
 function MyApp({ Component, pageProps }) {
@@ -7,6 +9,7 @@ function MyApp({ Component, pageProps }) {
     <>
   <Component {...pageProps} />
   <Header />
+  <Footer />
   </>
   ) 
 }
