@@ -13,6 +13,7 @@
     margin: 74px 0 35px;
 }
 .menuitem{
+    cursor: pointer;
     font-size: 18px;
     line-height: 24px;
     padding: 9px 0;
@@ -79,6 +80,9 @@
     margin-top: 8% !important;
 }
 .menuitemmain{
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
     color: #fff;
     font-size: 18px;
     line-height: 24px;
@@ -96,4 +100,56 @@
     left: -250%;
     right: calc(100% + 15px);
     transition: right .5s ease-in-out;
+}
+.menuitem:hover , .menutxt_mobile:hover{
+    color: #fff;
+}
+.SideBarcontainer_mobile{
+    display: flex;
+    background-color: var(--colorBlack900);
+    margin: 0;
+    padding-bottom: 2px;
+    max-width: none;
+    max-width: 100%;
+    height: auto;
+    bottom: auto;
+    top: 0;
+    position: fixed;
+    transition: top .1s linear;
+    z-index: 1;
+    position: relative;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    justify-content: flex-start;
+    margin: 0 0 -1px;
+    height: 48px;
+    padding: 0 16px;
+}
+.menutxt_mobile{
+    all: unset;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: var(--colorBlack500);
+    font-size: 14px;
+    line-height: 20px;
+    font-family: var(--fontMain);
+    cursor: pointer;
+    padding: 0 12px;
+}
+.menutxt_mobile_active{
+    color: #fff;
+}
+.menutxt_mobile_active:before{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    height: 0;
+    background-color: var(--colorVipGreen1000);
+    transition: .1s ease-in;
+    right: 10px;
+    left: 10px;
+    height: 2px;
 }

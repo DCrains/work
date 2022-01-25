@@ -1,9 +1,4 @@
 .header{
-    position: fixed;
-    z-index: 5;
-    top: 0;
-    left: 0;
-    right: 0;
     transition: transform .2s linear;
     background-color: var(--colorBlack900);
     display: flex;
@@ -123,6 +118,7 @@
     padding: 8px !important;
 }
 .navigation2_1button{
+    cursor: pointer;
     gap: 8px;
     position: relative;
     height: 99%;
@@ -263,4 +259,64 @@
     .logosvg{
         max-width: 100% !important;
     }   
+}
+.navigation1_item:hover , .navigation2_1button:hover, .navigation2_item:hover {
+    color: #fff; 
+}
+.menuitem:hover , .menutxt_mobile:hover{
+    color: #fff;
+}
+.SideBarcontainer_mobile{
+    display: flex;
+    background-color: var(--colorBlack900);
+    margin: 0;
+    padding-bottom: 2px;
+    width: 100%;
+    max-width: none;
+    max-width: 100%;
+    height: auto;
+    bottom: auto;
+    top: 0;
+    position: fixed;
+    transition: top .1s linear;
+    z-index: 1;
+    position: relative;
+    justify-content: flex-start;
+    margin: 0 0 -1px;
+    height: 48px;
+    padding: 0 16px;
+}
+.menutxt_mobile{
+    all: unset;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: var(--colorBlack500);
+    font-size: 14px;
+    line-height: 20px;
+    font-family: var(--fontMain);
+    cursor: pointer;
+    padding: 0 12px;
+}
+.menutxt_mobile_active{
+    color: #fff;
+}
+.menutxt_mobile_active:before{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    height: 0;
+    background-color: var(--colorVipGreen1000);
+    transition: .1s ease-in;
+    right: 10px;
+    left: 10px;
+    height: 2px;
+}
+.maincontainer{
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    right: 0;
 }
