@@ -1,0 +1,99 @@
+.SideBarcontainer{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.SideBar{
+    position: sticky;
+    bottom: 32px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 215px;
+    margin: 74px 0 35px;
+}
+.menuitem{
+    font-size: 18px;
+    line-height: 24px;
+    padding: 9px 0;
+    color: var(--colorBlack500);
+    transition: color .2s ease,font-weight .2s ease;
+    display: block;
+    text-decoration: none;
+}
+.scrol{
+    display: flex;
+    flex-wrap: wrap;
+}
+.scroltop{
+   
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 24px;
+    transition: opacity .2s ease;
+}
+.ocenka{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 24px;
+    transition: opacity .2s ease;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--colorBlack400);
+    margin-bottom: 5px;
+}
+.SideBarmenu{
+    list-style: none;
+    padding: 0;
+}
+.ocenkaitem{
+    color: var(--colorBlack600);
+    background: linear-gradient(
+90deg
+,#c8ff48,#59ffd6 49%,currentColor 50%,currentColor);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 12px;
+    line-height: 16px;
+    transition: background-position .2s ease;
+    background-size: 200% 1px;
+    background-position: 100% 100%;
+}
+.buttontop{
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin-right: 8px;
+    transition: background-color .2s ease;
+    background: var(--colorBlack800);
+    color: #fff;
+    border: none;
+    border-radius: 5%;
+    align-items: center;
+}
+.topimg{
+    margin-top: 8% !important;
+}
+.menuitemmain{
+    color: #fff;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 9px 0;
+    transition: color .2s ease,font-weight .2s ease;
+    display: block;
+    text-decoration: none;
+}
+.menuitemmain:before{
+    content: "";
+    position: absolute;
+    height: 1px;
+    top: calc(50% - 1px);
+    background: #fff;
+    left: -250%;
+    right: calc(100% + 15px);
+    transition: right .5s ease-in-out;
+}

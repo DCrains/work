@@ -90,3 +90,15 @@ a {
 .css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop{
   background-color: var(--colorBlack900)!important;
 }
+.main{
+  background-color: var(--colorBlack900);
+  
+}
+.maincontainer{
+  max-width: 1168px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+
+}
