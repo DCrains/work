@@ -310,7 +310,7 @@
     background-color: var(--colorVipGreen1000);
     transition: .1s ease-in;
     right: 10px;
-    left: 10px;
+    left: 0px;
     height: 2px;
 }
 .maincontainer{
@@ -319,4 +319,8 @@
     top: 0;
     left: 0;
     right: 0;
+}
+.menutxt_mobile:first-child{
+    padding: 0;
+    padding-right: 12px;
 }

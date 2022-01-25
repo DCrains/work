@@ -1,7 +1,7 @@
 import '../styles/globals.css'
-import  Header  from '../components/Header/index.js'
-import Footer from '../components/Footer/index.js'
-import SideBar from '../components/SideBar/index.js'
+import  Header  from '../components/Header'
+import Footer from '../components/Footer'
+import SideBar from '../components/SideBar'
 
 
 function MyApp({ Component, pageProps }) {

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Oswald&display=swap');
 html,
 body {
+  background-color: var(--colorBlack900);
   padding: 0;
   margin: 0;
   font-family:"Montserrat",sans-serif;
@@ -92,13 +93,14 @@ a {
 }
 .main{
   background-color: var(--colorBlack900);
-  
-}
-.maincontainer{
   max-width: 1168px;
   display: flex;
   justify-content: space-between;
   width: 100%;
   margin: 0 auto;
+}
+.maincontainer{ 
+  display: flex;
+  justify-content: space-between;
 
 }
