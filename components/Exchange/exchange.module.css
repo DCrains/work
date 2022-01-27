@@ -13,7 +13,8 @@
     align-items: flex-start;
 }
 .calculator{
-    flex-basis: 468px;
+    margin-left: 10%;
+    flex-basis: 361px;
     min-width: 368px;
     max-width: 100%;
     background: #fff;
@@ -39,6 +40,7 @@
     padding: 2px;
 }
 .switch_button{
+    gap: 10px;
     background: #fff;
     color: #000;
     box-shadow: var(--shadowSmallGrayBlue);
@@ -51,6 +53,7 @@
     font-weight: inherit;
 }
 .switch_button2{
+    gap: 10px;
     display: inline-flex;
     padding: 8px 12px;
     border-radius: 2px;
@@ -411,4 +414,10 @@
         max-width: 554px;
     }
   
+}
+.strelka{
+    margin-right: 8px;
+}
+.lock{
+    margin-right: 5px;
 }

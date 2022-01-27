@@ -6,7 +6,7 @@ import WhyChangly from '../components/WhyChangly'
 
 export default function Home() {
   return (
-  <div>
+  <div className='section'>
     <Exchange/>
     <Popular/>
     <WhyChangly/>

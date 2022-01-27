@@ -1,0 +1,116 @@
+.pop{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0 0 40px;
+}
+.pop_txt1{
+    zoom: 1;
+    text-align: left;
+    margin-bottom: 0;
+    font-size: 32px;
+    line-height: 36px;
+    color: #fff;
+    font-family: var(--fontMain);
+    font-weight: 700;
+}
+.pop_txt2{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: underline;
+    color: #fff;
+    cursor: pointer;
+    background-color: transparent;
+}
+.cardscontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 32px;
+}
+.card{
+    background: var(--colorGrayBlue1000);
+    border-radius: 8px;
+    padding: 24px;
+    width: 100%;
+    cursor: pointer;
+}
+.card_title{
+    zoom: 1;
+    text-align: left;
+    margin-bottom: 0px;
+    font-size: 32px;
+    line-height: 36px;
+    color: #fff;
+    margin: 0 0 4px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.sravnenie{
+    margin: 0 0 4px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+.percent{
+    color: var(--colorVipGreen900);
+}
+.update{
+    display: -ms-flexbox;
+    display: flex;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+.last{
+    color: #fff;
+    margin-left: 4px;
+}
+.show{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 32px 0 0;
+}
+.show_button{
+    all: unset;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+    padding: 0 0 2px;
+    border-width: 0 0 1px;
+    border-style: none none dotted;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(
+270deg
+,#c8ff48 35.73%,#59ffd6);
+}
+.show_txt{
+    color: #fff;
+    cursor: pointer;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    width: 100%;
+    padding: 96px 0;
+    position: relative;
+    border-bottom: 1px solid var(--colorBlack800);
+}
+.percent2{
+    color: var(--colorRed900) 
+}

@@ -1,0 +1,71 @@
+.whychangly{
+    zoom: 1;
+    text-align: left;
+    margin-bottom: 2rem;
+    font-size: 32px;
+    line-height: 36px;
+    color: #fff;
+    margin: 0 0 40px!important;
+}
+.why_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 32px;
+}
+.card{
+    background: var(--colorGrayBlue1000);
+    width: 95%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border-radius: 8px;
+    height: 98%
+}
+.why_img{
+    width: 367.5px !important;
+    height: 240px !important;
+    max-width: 368px !important;
+    min-height: 240px !important;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+
+}
+.whychangly_main{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    width: 100%;
+    padding: 96px 0;
+    position: relative;
+}
+.card_container{
+    padding: 16px 40px 48px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+ 
+    position: relative;
+}
+.card_title{
+    zoom: 1;
+    text-align: left;
+    margin-bottom: 0px;
+    font-size: 24px;
+    line-height: 32px;
+    color: #fff;
+    font-family: var(--fontMain);
+    font-weight: 700;
+}
+.card_txt{
+    margin: 8px 0 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--colorBlack400);
+}
