@@ -375,7 +375,7 @@
         90deg
         ,#59ffd6,#c8ff48);
             background-clip: text;
-            text-fill-color: transparent;
+           
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             color: #fff;
