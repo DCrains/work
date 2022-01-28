@@ -11,9 +11,9 @@ const Footer = () => {
             <div className={styles.footerblock_1}>
                 <div className={styles.footerblock_1_1}>
                     <a className={styles.aheader}>Download our mobile app for your Android or iOS device</a>
-                    <div className={styles.getin_img}> <Image src={gplay}/></div>
+                    <div className={styles.getin_img}> <Image src={gplay} /></div>
                     <div className={styles.getin_img}><Image src={apay} className={styles.apay} /></div>
-                    <div className={styles.getin_img}><Image src={apk} className={styles.apk} /></div>               
+                    <div className={styles.getin_img}><Image src={apk} className={styles.apk} /></div>
                 </div>
             </div>
             <div className={styles.footerblock_2}>
@@ -26,7 +26,7 @@ const Footer = () => {
                         <a className={styles.a}>Our partners</a>
                         <a className={styles.a}>Revives</a>
                         <a className={styles.a}>Changelly PRO
-                        <span className={styles.new}>new</span>
+                            <span className={styles.new}>new</span>
                         </a>
                         <a className={styles.a}>Crypto app</a>
                     </div>
@@ -99,8 +99,11 @@ const Footer = () => {
                     <div className={styles.soc10}></div>
                 </div>
                 <div className={styles.footerblock3_2}>
-            <i className={styles.countries}></i>
-            <a className={styles.footerblock3_item}>© Changelly 2015—2022</a>
+                    <div className={styles.countries_container}>
+                        <i className={styles.countries}></i>
+                        <span className={styles.EN}>EN</span>
+                    </div>
+                    <a className={styles.footerblock3_item}>© Changelly 2015—2022</a>
                 </div>
             </div>
 

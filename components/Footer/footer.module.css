@@ -89,7 +89,7 @@ display: block;
 }
 .footerblock3{
     justify-content: space-between;
-    padding: 24px 0;
+    padding: 50px 0;
     border-top: 1px solid var(--colorGrayBlue150);
     margin: 0 auto;
     padding-top: 32px;
@@ -203,7 +203,7 @@ display: block;
     height: 20px;
     background: url(../../public/footer/countries.svg) no-repeat 0 0/auto 100%;
     border-radius: 50%;
-    margin: 0 48px 0 0;
+    margin: 0 10px 0 0;
 }
 .footerblock3_2{
     display: flex;
@@ -255,4 +255,14 @@ display: block;
     font-weight: 600;
     font-size: 12px;
     margin-left: 3px;
+}
+.countries_container{
+    display: flex;
+}
+.EN{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--colorBlack500);
+    margin: 0px 45px 0 8px;
 }
