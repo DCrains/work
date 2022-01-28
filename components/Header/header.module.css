@@ -3,6 +3,7 @@
     background-color: var(--colorBlack900);
     display: flex;
     justify-content: center;
+    
 }
 .container{
     position: relative;
@@ -83,7 +84,9 @@
     position: relative;
 }
 .navigation2_2{
-    gap:24px;
+    margin-left: 3px;
+    grid-gap: 24px;
+    gap: 20px;
     padding: 0;
     height: 100%;
     display: flex;
@@ -118,6 +121,7 @@
     padding: 8px !important;
 }
 .navigation2_1button{
+    font-family:"Montserrat",sans-serif;
     cursor: pointer;
     gap: 8px;
     position: relative;
@@ -323,4 +327,11 @@
 .menutxt_mobile:first-child{
     padding: 0;
     padding-right: 12px;
+}
+.Personal{
+    display: flex;
+    gap: 24px;
+    margin-left: 17px;
+    height: 100%;
+
 }

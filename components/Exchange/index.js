@@ -18,8 +18,8 @@ const Exchange = () => {
                     <div className={styles.calculator}>
                         <div className={styles.switch}>
                             <div className={styles.switch_container}>
-                                <button className={styles.switch_button}><Image src={unlock1} className={styles.lock}/>Floating rate</button>
-                                <button className={styles.switch_button2}><Image src={lock} className={styles.lock}/>Fixed rate</button>
+                                <button className={styles.switch_button}><Image src={unlock1} className={styles.lock}/><span className={styles.float}>Floating rate</span></button>
+                                <button className={styles.switch_button2}><Image src={lock} className={styles.lock}/><span className={styles.float1}>Fixed rate</span></button>
                             </div>
                             <div className={styles.qustion}><Image src={qustion}/></div>
                         </div>
@@ -69,9 +69,9 @@ const Exchange = () => {
                         </h1>
                         <p className={styles.random}>Exchange Bitcoin and 200+ altcoins in a fast, simple and secure way.</p>
                         <div className={styles.getin}>
-                            <Image src={gplay}/>
-                            <Image src={apk}/>
-                            <Image src={appstore}/>
+                           <div className={styles.getin_img}> <Image src={gplay}/></div>
+                           <div className={styles.getin_img}> <Image src={apk}/></div>
+                           <div className={styles.getin_img}> <Image src={appstore}/></div>
                         </div>
                     </div>
                 </div>

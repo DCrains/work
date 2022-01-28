@@ -6,6 +6,7 @@
     padding: 96px 0;
     position: relative;
     border-bottom: 1px solid var(--colorBlack800);
+
 }
 .formcontainer{
     display: flex;
@@ -13,7 +14,7 @@
     align-items: flex-start;
 }
 .calculator{
-    margin-left: 10%;
+  
     flex-basis: 361px;
     min-width: 368px;
     max-width: 100%;
@@ -50,7 +51,7 @@
     color: var(--colorBlack600);
     border: 0;
     cursor: pointer;
-    font-weight: inherit;
+    font-weight: inherit !important;
 }
 .switch_button2{
     gap: 10px;
@@ -327,7 +328,7 @@
     color: var(--colorBlack400);
 }
 .button{
-    background: var(--colorVipGreen800);
+    background: var(--colorVipGreen900);
     margin: 24px 0 0;
     padding: 14px 16px;
     font-size: 16px;
@@ -349,6 +350,7 @@
     width: 100%;
 }
 .exchangenow{
+    
     color: #fff;
 }
 .txt{
@@ -394,6 +396,7 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 8px;
     max-width: 264px;
+    
  
 }
 @media (max-width: 1000px){
@@ -420,4 +423,24 @@
 }
 .lock{
     margin-right: 5px;
+}
+.getin_img{
+    background: var(--colorBlack800);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.getin_img:hover{
+    background: none;
+}
+.float{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    color: #000;
+}
+.float1{
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+.button:hover{
+    background: var(--colorVipGreen800);
 }

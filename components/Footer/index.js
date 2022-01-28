@@ -11,9 +11,9 @@ const Footer = () => {
             <div className={styles.footerblock_1}>
                 <div className={styles.footerblock_1_1}>
                     <a className={styles.aheader}>Download our mobile app for your Android or iOS device</a>
-                    <Image src={gplay} className={styles.gplay} />
-                    <Image src={apay} className={styles.apay} />
-                    <Image src={apk} className={styles.apk} />
+                    <div className={styles.getin_img}> <Image src={gplay}/></div>
+                    <div className={styles.getin_img}><Image src={apay} className={styles.apay} /></div>
+                    <div className={styles.getin_img}><Image src={apk} className={styles.apk} /></div>               
                 </div>
             </div>
             <div className={styles.footerblock_2}>

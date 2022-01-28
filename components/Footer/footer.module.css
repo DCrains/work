@@ -235,3 +235,12 @@ display: block;
         align-items: center;
     }
 }
+.getin_img{
+    background: var(--colorBlack800);
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 8px;
+}
+.getin_img:hover{
+    background: none;
+}

@@ -79,13 +79,14 @@ const Header = () => {
                                     <Image src={logo} className={styles.logosvg} />
                                 </div>
                             }
-
+                        <div className={styles.Personal}>
                             <Link href='/'><a className={styles.navigation1_item_active}>Personal</a></Link>
                             <Link href='/'><a className={styles.navigation1_item}>Business</a></Link>
                         </div>
+                        </div>
                         <div className={styles.navigation2}>
                             <div className={styles.navigation2_1}>
-                                <button className={styles.navigation2_1button}><span>All Products</span><Image src={strelka} className={styles.strelka} /></button>
+                                <button className={styles.navigation2_1button}><span>All products</span><Image src={strelka} className={styles.strelka} /></button>
                                 <Link href='/'><a className={styles.navigation2_item}>Support</a></Link>
                                 <Link href='/'><a className={styles.navigation2_item}>About us</a></Link>
                             </div>

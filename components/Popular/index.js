@@ -70,7 +70,7 @@ const Popular = () => {
     return (
         <section className={styles.form}>
             <div className={styles.pop}>
-                <h2 className={styles.pop_txt1}>Popular Exchange pairis</h2>
+                <h2 className={styles.pop_txt1}>Popular Exchange pairs</h2>
                 <a className={styles.pop_txt2}>view all supported pairs</a>
             </div>
             {!matches ?
@@ -91,7 +91,7 @@ const Popular = () => {
 
                 </div><div className={styles.show}>
                         <button className={styles.show_button} onClick={sort === 8 ? () => setSort(4) : () => setSort(8)}>
-                            <span className={styles.show_txt}>{sort === 4 ? 'show more' : 'hide'}</span>
+                            <span className={styles.show_txt}>{sort === 4 ? <span>show more</span> : <span>hide</span>}</span>
                         </button>
                     </div></>
                 :  <Carousel 

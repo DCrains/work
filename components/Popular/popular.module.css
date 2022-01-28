@@ -100,6 +100,7 @@
     border-image-source: linear-gradient(
 270deg
 ,#c8ff48 35.73%,#59ffd6);
+ 
 }
 .show_txt{
     color: #fff;
@@ -124,4 +125,17 @@
     display: flex;
     gap: 24px;
     margin-left: 24px;
+}
+.card:hover{
+  background: var(--colorGrayBlue950);
+}
+.show_button::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    background: 0 0;
+    height: 0;
+    left: 0;
+    bottom: -1px;
+    border-bottom: 1px dashed var(--colorBlack900);
 }

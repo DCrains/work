@@ -96,15 +96,23 @@ a {
   background-color: var(--colorBlack900);
   max-width: 1168px;
   display: flex;
-  justify-content: space-between;
   width: 100%;
   margin: 0 auto;
+  min-height: calc(100vh - 619px);
+  margin-top: 72px;
 }
 .maincontainer{ 
   display: flex;
-  justify-content: space-between;
+
 
 }
 .section{
-  margin-left: 20%;
+  margin-left: 19%;
+}
+@media (max-width: 768px){
+  .maincontainer{ 
+    display: none;
+  
+  
+  }
 }
