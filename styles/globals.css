@@ -112,7 +112,5 @@ a {
 @media (max-width: 768px){
   .maincontainer{ 
     display: none;
-  
-  
   }
 }
