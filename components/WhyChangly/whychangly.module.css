@@ -69,3 +69,17 @@
     line-height: 20px;
     color: var(--colorBlack400);
 }
+.why_container1{
+    display: flex;
+ 
+}
+.card1{
+    background: var(--colorGrayBlue1000);
+    margin-left: 20px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border-radius: 8px;
+   
+}

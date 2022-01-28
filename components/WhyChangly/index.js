@@ -4,12 +4,17 @@ import stars from "../../public/whychangly/stars.png"
 import arrows from "../../public/whychangly/arrows.png"
 import cards from "../../public/whychangly/cards.png"
 import styles from "../WhyChangly/whychangly.module.css"
+import Carousel from 'nuka-carousel';
+import { useMediaQuery } from "@mui/material"
 
 const WhyChangly = () =>{
+    const matches = useMediaQuery('(max-width:767px)')
     return(
         <section className={styles.whychangly_main}>
             <h2 className={styles.whychangly}>Why Changly</h2>
-            <div className={styles.why_container}>
+          
+                {!matches ?<>
+                    <div className={styles.why_container}>
                 <div className={styles.card}>
                     <Image src={clock} className={styles.why_img}/>
                     <div className={styles.card_container}>
@@ -38,7 +43,55 @@ const WhyChangly = () =>{
                         <p className={styles.card_txt}>We do not store cryptocurrencies. Coins are sent directly to your wallet after the exchange.</p>
                     </div>
                 </div>
+                </div>
+                </>
+            
+            :
+            <Carousel  
+                getControlsContainerStyles={(key) => {
+                    switch (key) {
+                       default:
+                         return {
+                           display: 'none',
+                         };
+                     }
+                 }}>
+            <div className={styles.why_container1}>
+                <div className={styles.card1}>
+                    <Image src={clock} className={styles.why_img1}/>
+                    <div className={styles.card_container}>
+                        <h3 className={styles.card_title}>24/7 live support</h3>
+                        <p className={styles.card_txt}>Our dedicated support team is always ready to assist you with any questions regarding crypto exchanges.</p>
+                    </div>
+                </div>
+                <div className={styles.card1}>
+                    <Image src={stars} className={styles.why_img1}/>
+                    <div className={styles.card_container}>
+                        <h3 className={styles.card_title}>Competitive rates on the market</h3>
+                        <p className={styles.card_txt}> We work with a variety of crypto trading platforms in order to find the best offer on the market for you.</p>
+                    </div>
+                </div>
             </div>
+            <div className={styles.why_container1}>
+            <div className={styles.card1}>
+                    <Image src={arrows} className={styles.why_img1}/>
+                    <div className={styles.card_container}>
+                        <h3 className={styles.card_title}>Speedy transactions</h3>
+                        <p className={styles.card_txt}>We achieved an average transaction speed of 25-40 minutes to ensure you get the best out of the crypto market.</p>
+                    </div>
+                </div>
+                <div className={styles.card1}>
+                    <Image src={cards} className={styles.why_img1}/>
+                    <div className={styles.card_container}>
+                        <h3 className={styles.card_title}>Security of your funds</h3>
+                        <p className={styles.card_txt}>We do not store cryptocurrencies. Coins are sent directly to your wallet after the exchange.</p>
+                    </div>
+                </div>
+            </div>
+            
+            </Carousel>
+            }
+            
         </section>
     )
 }

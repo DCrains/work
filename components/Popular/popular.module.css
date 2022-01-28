@@ -1,3 +1,6 @@
+.form{
+    margin-right: 20%;
+}
 .pop{
     display: -ms-flexbox;
     display: flex;
@@ -113,4 +116,12 @@
 }
 .percent2{
     color: var(--colorRed900) 
+}
+.nextButtonClassName{
+    display: none !important;
+}
+.card1{
+    display: flex;
+    gap: 24px;
+    margin-left: 24px;
 }
