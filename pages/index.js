@@ -6,10 +6,10 @@ import WhyChangly from '../components/WhyChangly'
 
 export default function Home() {
   return (
-  <div className='section'>
-    <Exchange/>
-    <Popular/>
-    <WhyChangly/>
-  </div>
+    <div className='section'>
+      <Exchange />
+      <Popular />
+      <WhyChangly />
+    </div>
   )
 }

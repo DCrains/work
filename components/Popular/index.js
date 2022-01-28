@@ -1,5 +1,5 @@
 import Image from "next/image"
- import strelka from "../../public/popular/strelka.svg"
+import strelka from "../../public/popular/strelka.svg"
 import grafik1 from "../../public/popular/grafik1.png"
 import grafik2 from "../../public/popular/grafik2.png"
 import grafik3 from "../../public/popular/grafik3.png"
@@ -74,7 +74,7 @@ const Popular = () => {
                 <a className={styles.pop_txt2}>view all supported pairs</a>
             </div>
             {!matches ?
-            <><div className={styles.cardscontainer}>
+                <><div className={styles.cardscontainer}>
                     {cardmassive.slice(0, sort).map((card, idx) => {
                         return (
                             <div key={idx} className={styles.card}>
@@ -94,103 +94,103 @@ const Popular = () => {
                             <span className={styles.show_txt}>{sort === 4 ? <span>show more</span> : <span>hide</span>}</span>
                         </button>
                     </div></>
-                :  <Carousel 
-                getControlsContainerStyles={(key) => {
-                    switch (key) {
-                       default:
-                         return {
-                           display: 'none',
-                         };
-                     }
-                 }}>
+                : <Carousel
+                    getControlsContainerStyles={(key) => {
+                        switch (key) {
+                            default:
+                                return {
+                                    display: 'none',
+                                };
+                        }
+                    }}>
                     <div className={styles.card1}>
-                    {cardmassive.slice(0, 1).map((card, idx) => {
-                        return (
-                            <div key={idx} className={styles.card}>
-                                <h3 className={styles.card_title}>{card.title}</h3>
-                                <span className={styles.sravnenie}>{card.span}</span>
-                                <div className={styles.grafiks}><Image src={card.img2} /></div>
-                                <div className={styles.update}>
-                                    <span className={classNames(card.span1 > 0 ? styles.percent : styles.percent2)}>{card.span1}%</span>
-                                    <span className={styles.last}>{card.span2}</span>
+                        {cardmassive.slice(0, 1).map((card, idx) => {
+                            return (
+                                <div key={idx} className={styles.card}>
+                                    <h3 className={styles.card_title}>{card.title}</h3>
+                                    <span className={styles.sravnenie}>{card.span}</span>
+                                    <div className={styles.grafiks}><Image src={card.img2} /></div>
+                                    <div className={styles.update}>
+                                        <span className={classNames(card.span1 > 0 ? styles.percent : styles.percent2)}>{card.span1}%</span>
+                                        <span className={styles.last}>{card.span2}</span>
+                                    </div>
                                 </div>
-                            </div>
-                        )
-                    })}
-                     {cardmassive.slice(1, 2).map((card, idx) => {
-                        return (
-                            <div key={idx} className={styles.card}>
-                                <h3 className={styles.card_title}>{card.title}</h3>
-                                <span className={styles.sravnenie}>{card.span}</span>
-                                <div className={styles.grafiks}><Image src={card.img2} /></div>
-                                <div className={styles.update}>
-                                    <span className={classNames(card.span1 > 0 ? styles.percent : styles.percent2)}>{card.span1}%</span>
-                                    <span className={styles.last}>{card.span2}</span>
+                            )
+                        })}
+                        {cardmassive.slice(1, 2).map((card, idx) => {
+                            return (
+                                <div key={idx} className={styles.card}>
+                                    <h3 className={styles.card_title}>{card.title}</h3>
+                                    <span className={styles.sravnenie}>{card.span}</span>
+                                    <div className={styles.grafiks}><Image src={card.img2} /></div>
+                                    <div className={styles.update}>
+                                        <span className={classNames(card.span1 > 0 ? styles.percent : styles.percent2)}>{card.span1}%</span>
+                                        <span className={styles.last}>{card.span2}</span>
+                                    </div>
                                 </div>
-                            </div>
-                        )
-                    })}
+                            )
+                        })}
                     </div>
                     <div className={styles.card1}>
-                    {cardmassive.slice(2, 3).map((card, idx) => {
-                        return (
-                            <div key={idx} className={styles.card}>
-                                <h3 className={styles.card_title}>{card.title}</h3>
-                                <span className={styles.sravnenie}>{card.span}</span>
-                                <div className={styles.grafiks}><Image src={card.img2} /></div>
-                                <div className={styles.update}>
-                                    <span className={classNames(card.span1 > 0 ? styles.percent : styles.percent2)}>{card.span1}%</span>
-                                    <span className={styles.last}>{card.span2}</span>
+                        {cardmassive.slice(2, 3).map((card, idx) => {
+                            return (
+                                <div key={idx} className={styles.card}>
+                                    <h3 className={styles.card_title}>{card.title}</h3>
+                                    <span className={styles.sravnenie}>{card.span}</span>
+                                    <div className={styles.grafiks}><Image src={card.img2} /></div>
+                                    <div className={styles.update}>
+                                        <span className={classNames(card.span1 > 0 ? styles.percent : styles.percent2)}>{card.span1}%</span>
+                                        <span className={styles.last}>{card.span2}</span>
+                                    </div>
                                 </div>
-                            </div>
-                        )
-                    })}
-                     {cardmassive.slice(3, 4).map((card, idx) => {
-                        return (
-                            <div key={idx} className={styles.card}>
-                                <h3 className={styles.card_title}>{card.title}</h3>
-                                <span className={styles.sravnenie}>{card.span}</span>
-                                <div className={styles.grafiks}><Image src={card.img2} /></div>
-                                <div className={styles.update}>
-                                    <span className={classNames(card.span1 > 0 ? styles.percent : styles.percent2)}>{card.span1}%</span>
-                                    <span className={styles.last}>{card.span2}</span>
+                            )
+                        })}
+                        {cardmassive.slice(3, 4).map((card, idx) => {
+                            return (
+                                <div key={idx} className={styles.card}>
+                                    <h3 className={styles.card_title}>{card.title}</h3>
+                                    <span className={styles.sravnenie}>{card.span}</span>
+                                    <div className={styles.grafiks}><Image src={card.img2} /></div>
+                                    <div className={styles.update}>
+                                        <span className={classNames(card.span1 > 0 ? styles.percent : styles.percent2)}>{card.span1}%</span>
+                                        <span className={styles.last}>{card.span2}</span>
+                                    </div>
                                 </div>
-                            </div>
-                        )
-                    })}
+                            )
+                        })}
                     </div>
                     <div className={styles.card1}>
-                    {cardmassive.slice(4, 5).map((card, idx) => {
-                        return (
-                            <div key={idx} className={styles.card}>
-                                <h3 className={styles.card_title}>{card.title}</h3>
-                                <span className={styles.sravnenie}>{card.span}</span>
-                                <div className={styles.grafiks}><Image src={card.img2} /></div>
-                                <div className={styles.update}>
-                                    <span className={classNames(card.span1 > 0 ? styles.percent : styles.percent2)}>{card.span1}%</span>
-                                    <span className={styles.last}>{card.span2}</span>
+                        {cardmassive.slice(4, 5).map((card, idx) => {
+                            return (
+                                <div key={idx} className={styles.card}>
+                                    <h3 className={styles.card_title}>{card.title}</h3>
+                                    <span className={styles.sravnenie}>{card.span}</span>
+                                    <div className={styles.grafiks}><Image src={card.img2} /></div>
+                                    <div className={styles.update}>
+                                        <span className={classNames(card.span1 > 0 ? styles.percent : styles.percent2)}>{card.span1}%</span>
+                                        <span className={styles.last}>{card.span2}</span>
+                                    </div>
                                 </div>
-                            </div>
-                        )
-                    })}
-                     {cardmassive.slice(5, 6).map((card, idx) => {
-                        return (
-                            <div key={idx} className={styles.card}>
-                                <h3 className={styles.card_title}>{card.title}</h3>
-                                <span className={styles.sravnenie}>{card.span}</span>
-                                <div className={styles.grafiks}><Image src={card.img2} /></div>
-                                <div className={styles.update}>
-                                    <span className={classNames(card.span1 > 0 ? styles.percent : styles.percent2)}>{card.span1}%</span>
-                                    <span className={styles.last}>{card.span2}</span>
+                            )
+                        })}
+                        {cardmassive.slice(5, 6).map((card, idx) => {
+                            return (
+                                <div key={idx} className={styles.card}>
+                                    <h3 className={styles.card_title}>{card.title}</h3>
+                                    <span className={styles.sravnenie}>{card.span}</span>
+                                    <div className={styles.grafiks}><Image src={card.img2} /></div>
+                                    <div className={styles.update}>
+                                        <span className={classNames(card.span1 > 0 ? styles.percent : styles.percent2)}>{card.span1}%</span>
+                                        <span className={styles.last}>{card.span2}</span>
+                                    </div>
                                 </div>
-                            </div>
-                        )
-                    })}
+                            )
+                        })}
                     </div>
-                    
-                    
-              </Carousel>
-                
+
+
+                </Carousel>
+
             }
         </section>
     )

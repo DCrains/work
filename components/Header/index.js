@@ -79,10 +79,10 @@ const Header = () => {
                                     <Image src={logo} className={styles.logosvg} />
                                 </div>
                             }
-                        <div className={styles.Personal}>
-                            <Link href='/'><a className={styles.navigation1_item_active}>Personal</a></Link>
-                            <Link href='/'><a className={styles.navigation1_item}>Business</a></Link>
-                        </div>
+                            <div className={styles.Personal}>
+                                <Link href='/'><a className={styles.navigation1_item_active}>Personal</a></Link>
+                                <Link href='/'><a className={styles.navigation1_item}>Business</a></Link>
+                            </div>
                         </div>
                         <div className={styles.navigation2}>
                             <div className={styles.navigation2_1}>
@@ -101,14 +101,14 @@ const Header = () => {
             </header>
 
             {matches3
-                    ?
-                    <div className={styles.SideBarcontainer_mobile}>
-                        <a className={classNames(styles.menutxt_mobile, styles.menutxt_mobile_active)}>Exchange</a>
-                        <a className={styles.menutxt_mobile}>Buy</a>
-                        <a className={styles.menutxt_mobile}>Sell</a>
-                        <a className={styles.menutxt_mobile}>Trade</a>
-                    </div> :
-                    null
+                ?
+                <div className={styles.SideBarcontainer_mobile}>
+                    <a className={classNames(styles.menutxt_mobile, styles.menutxt_mobile_active)}>Exchange</a>
+                    <a className={styles.menutxt_mobile}>Buy</a>
+                    <a className={styles.menutxt_mobile}>Sell</a>
+                    <a className={styles.menutxt_mobile}>Trade</a>
+                </div> :
+                null
 
             }
         </div>
