@@ -42,7 +42,7 @@ display: block;
 .a{
     display: block;
     position: relative;
-    margin: 8px 0;
+    margin: 17px 0;
     line-height: 1.5;
     font-size: 14px;
     text-decoration: none;
@@ -243,4 +243,16 @@ display: block;
 }
 .getin_img:hover{
     background: none;
+}
+.new{
+    text-decoration: none;
+    background: var(--colorRed900);
+    border-radius: 2px;
+    position: absolute;
+    top: -10px;
+    color: #fff;
+    padding: 0 2px;
+    font-weight: 600;
+    font-size: 12px;
+    margin-left: 3px;
 }

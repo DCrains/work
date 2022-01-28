@@ -9,8 +9,14 @@ import unlock1 from "../../public/exchange/unlock1.svg"
 import unlock2 from "../../public/exchange/unlock2.svg"
 import strelka from "../../public/exchange/strelka.svg"
 import Image from "next/image"
+import { useState } from "react"
+
 
 const Exchange = () => {
+    const [btc,setBtc] = useState(0.1);
+    const btcHandler =(jopa)=>{
+        setBtc(jopa.target.value)
+    }
     console.log(unlock2)
     return(
             <section className={styles.form}>
@@ -26,7 +32,7 @@ const Exchange = () => {
                         <div className={styles.send}>
                             <div className={styles.yousend}>
                                 <p className={styles.yousend_txt}>You send</p>
-                                <input className={styles.value_send} value={'0.1'}></input>
+                                <input className={styles.value_send} onChange={jopa => btcHandler(jopa)} value={btc}></input>
                             </div>
                             <div className={styles.send_value}>
                             <button className={styles.send_button}>
@@ -70,8 +76,9 @@ const Exchange = () => {
                         <p className={styles.random}>Exchange Bitcoin and 200+ altcoins in a fast, simple and secure way.</p>
                         <div className={styles.getin}>
                            <div className={styles.getin_img}> <Image src={gplay}/></div>
-                           <div className={styles.getin_img}> <Image src={apk}/></div>
                            <div className={styles.getin_img}> <Image src={appstore}/></div>
+                           <div className={styles.getin_img}> <Image src={apk}/></div>
+                           
                         </div>
                     </div>
                 </div>

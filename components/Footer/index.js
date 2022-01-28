@@ -25,7 +25,9 @@ const Footer = () => {
                         <a className={styles.a}>Press about us</a>
                         <a className={styles.a}>Our partners</a>
                         <a className={styles.a}>Revives</a>
-                        <a className={styles.a}>Changelly PRO</a>
+                        <a className={styles.a}>Changelly PRO
+                        <span className={styles.new}>new</span>
+                        </a>
                         <a className={styles.a}>Crypto app</a>
                     </div>
                     <div className={styles.footerblock_item}>
