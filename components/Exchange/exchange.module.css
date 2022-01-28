@@ -85,9 +85,10 @@
     position: relative;
 }
 .value_send{
+    font-family: 'Montserrat';
     font-weight: 700;
     line-height: 24px;
-    font-size: 18px;
+    font-size: 18px!important;
     color: var(--colorGrayBlue900);
     border-right: 0;
     border-top-right-radius: 0;
@@ -167,7 +168,6 @@
     text-align: left;
 }
 .etherium{
-    margin-left: 20px;
     font-size: 12px;
     font-weight: 500;
     line-height: 12px;
@@ -177,6 +177,7 @@
     color: var(--colorBlack400);
 }
 .ETH1{
+    margin-right: 20px;
     font-weight: 700;
     line-height: 24px;
     font-size: 18px;
@@ -312,13 +313,14 @@
     
 }
 .BTC1{
+    margin-right: 20px;
     font-weight: 700;
     line-height: 24px;
     font-size: 18px;
     color: var(--colorGrayBlue900);
 }
 .etherium1{
-    margin-left: 6px;
+    margin-right: 14px;
     font-size: 12px;
     font-weight: 500;
     line-height: 12px;
